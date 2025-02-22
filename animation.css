@@ -1,0 +1,30 @@
+.dot {
+    animation: fadeGrow 2s infinite ease-in-out;
+}
+
+/* Fading & Growing Animation */
+@keyframes fadeGrow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+.blink-dot {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-        <link rel="stylesheet" href="style1.css" />
+        <link rel="stylesheet" href="animation.css" />
+        <link rel="stylesheet" href="core.css" />
+        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Oleo Script" rel="stylesheet" />
@@ -73,6 +75,7 @@
             <a href="https://twitter.com" class="fab btn btn-primary"><i class="fa-brands fa-facebook h4 mt-2"></i></a>
             <a href="https://instagram.com" class="fab btn btn-primary"><i class="fa-brands fa-whatsapp h4 mt-2"></i></a>
         </div>
+    
         <!--Home-->
         <div class="container-fluid headline">
             <div class="col">
@@ -82,28 +85,28 @@
                             <div id="maincover" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="assets/tourist_places/fateh_sagar.jpg" class="" alt="..." />
+                                        <img src="assets/tourist_places/fateh_sagar.jpg" class="img-fluid"  style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image"  />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/pichola_lake.jpg " class="" alt="Circular Image" />
+                                        <img src="assets/tourist_places/pichola_lake.jpg " class="img-fluid"  style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/savariya1.png " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/savariya1.png " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/cable_car.jpg " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/cable_car.jpg " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/saheliyo_badi.jpg " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/saheliyo_badi.jpg " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/Sajjangarhg_palace.jpg " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/Sajjangarhg_palace.jpg " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/badi_lake.jpg " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/badi_lake.jpg " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/tourist_places/Bagore-ki-Haveli.jpg " class="image-cover" alt="Circular Image" />
+                                        <img src="assets/tourist_places/Bagore-ki-Haveli.jpg " class="image-cover" style="object-fit: cover;transform: rotate(10deg);" alt="Circular Image" />
                                     </div>
                                 </div>
                             </div>
@@ -111,20 +114,22 @@
                     </div>
 
                     <div class="col-md-6 d-flex flex-column justify-content-around align-items-end p-0">
-                        <p class="m-0 h2 sub-title text-secondary mx-3">Instant Booking, <span class="text-primary">Unlimited Adventures</span> </p>
+                        <p class="m-0 h2 sub-title text-secondary mx-1">Instant Booking, <span class="text-primary">Unlimited Adventures</span> </p>
+                        
+                        <div class="d-flex col-md-9 flex-row justify-content-start align-items-center">
+                            <div><i class="fa-solid fa-mobile-screen-button text-primary dot mx-2"></i></div>
+                            <div><p class="m-0 h2 sub-title text-secondary mx-2 "> 800-5792-550</p></div>
+                        </div>
+                        
                         <img src="" alt="" srcset="" id="rental_car" >
-                        <!-- <div class="col-md-12 p-0 m-0 d-flex justify-content-end align-items-center " style=" position: relative;">
-                            <div class="rounded-circle " style="height: 200px ;width: 200px;position: absolute;left: 85%; background-color: #D9D9D9;">
-                              
-                            </div>
-                         </div> -->
+                        
                     <div class="col-md-12 d-flex flex-column justify-content-center">
                         <div>
-                            <h1 class="text-xl sm:text-2xl text-primary">Incredible</h1>
-                            <h1 class="text-4xl sm:text-6xl text-secondary mt-2 sm:mt-4" id="title"></h1>
+                            <h1 class=" text-primary">Incredible</h1>
+                            <h1 class="text-secondary mt-2 " id="title"></h1>
                         </div>
                         <div class="col-md-10">
-                            <p id="description" class="h6 text-sm sm:text-base mt-2 sm:mt-3 text-secondary max-w-md"></p>
+                            <p id="description" class="h6 text-sm  mt-2  text-secondary max-w-md"></p>
                         </div>
                     <div class="mt-4">
                         <button class="btn btn-primary rounded-circle" data-bs-target="#maincover" data-bs-slide="prev" style="width: 50px; height: 50px;">
@@ -140,74 +145,67 @@
             </div>
         </div>
 
+     
+        <!-- Modal Structure -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                  
+                    <div class="modal-body p-0">
+                        <img src="" alt="" srcset="" id="modal-image" class="w-100 h-100">
+                    </div>
+                    <div class="p-2" id="modal-footer">
+                           <h1 id="modal-footer-title" class="h4 text-primary   "> </h1> 
+                           <p id="modal-footer-desc" class="h6 text-sm  mt-2  text-secondary text-justify"></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
        
         <!--Rentals-->
         <div class="container mt-5" id="rental">
             <div class="d-flex justify-content-center align-middle">
                 <div>
                     <h1 class=" text-primary h4">Rental</h1>
-                    <h1 class=" h1 text-secondary mt-2 mx-5 sm:mt-4 sub-title-heading">Services</h1>
+                    <h1 class=" h1 text-secondary mt-2  sub-title-heading">Services</h1>
                 </div>
             </div>
             <div class="col-md-12 mt-5 headline">
-                <div class="slider-container">
-                    <div class="slider" id="imageSlider">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="card d-flex flex-columns border-0 shadow-lg bg-warning py-1">
-                                    <img src="/assets/rental/2-wheeler.png" alt="" class="d-block mx-auto" />
-                                    <div class="card-body bg-white px-2 mt-3">
-                                        <div class="d-flex flex justify-content-between">
-                                            <div>
-                                                2-Wheelers
-                                            </div>
-                                            <div><i class="fa-solid fa-arrow-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
+              <div class="row p-0 m-0">
+                    <div class="col-md-3 p-1 rentan-card-height">
+                        <div class="card d-flex justify-content-end h-100 border-0 shadow-lg bg-warning  bg-rental-1">
+                             <div class="d-flex flex justify-content-between bg-light p-2">
+                                <div> 2-Wheelers</div>
+                                <div><i class="fa-solid fa-arrow-right"></i></div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card d-flex flex-columns border-0 shadow-lg bg-warning py-1">
-                                    <img src="/assets/rental/swift.png" alt="" class="d-block mx-auto" />
-                                    <div class="card-body bg-white px-2 mt-3">
-                                        <div class="d-flex flex justify-content-between">
-                                            <div>
-                                                Book Us For Corporate
-                                            </div>
-                                            <div><i class="fa-solid fa-arrow-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1 rentan-card-height">
+                        <div class="card d-flex justify-content-end h-100 border-0 shadow-lg bg-warning  bg-rental-2">
+                             <div class="d-flex flex justify-content-between bg-light p-2">
+                                <div> Book Us For Corporate </div>
+                                <div><i class="fa-solid fa-arrow-right"></i></div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card d-flex flex-columns border-0 shadow-lg bg-warning py-1">
-                                    <img src="/assets/rental/fortuner.png" alt="" class="d-block mx-auto p-2" style="width: 250px;" />
-                                    <div class="card-body bg-white px-2 mt-3">
-                                        <div class="d-flex flex justify-content-between">
-                                            <div>
-                                                Book Us For Events
-                                            </div>
-                                            <div><i class="fa-solid fa-arrow-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1 rentan-card-height">
+                        <div class="card d-flex justify-content-end h-100 border-0 shadow-lg bg-warning  bg-rental-3">
+                             <div class="d-flex flex justify-content-between bg-light p-2">
+                                <div> Book Us For Events</div>
+                                <div><i class="fa-solid fa-arrow-right"></i></div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="card d-flex flex-columns border-0 shadow-lg bg-warning py-1">
-                                    <img src="/assets/rental/innova.png" alt="" class="d-block mx-auto p-2" style="width: 250px;" />
-                                    <div class="card-body bg-white px-2 mt-3">
-                                        <div class="d-flex flex justify-content-between">
-                                            <div>
-                                                Book Us Udaipur Sighting
-                                            </div>
-                                            <div><i class="fa-solid fa-arrow-right"></i></div>
-                                        </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-1 rentan-card-height">
+                        <div class="card d-flex justify-content-end h-100 border-0 shadow-lg bg-warning  bg-rental-4">
+                             <div class="d-flex flex justify-content-between bg-light p-2">
+                                <div> Book Us Udaipur Sighting</div>
+                                <div><i class="fa-solid fa-arrow-right"></i></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    
                 <!-- <div class="mt-4">
                 <button onclick="prevSlide()" class="btn btn-primary rounded-circle" style="width: 50px; height: 50px;">
                     <i class="fa-solid fa-chevron-left"></i>
@@ -289,7 +287,7 @@
             <div class="d-flex justify-content-center align-middle ">
                 <div>
                     <h1 class=" text-primary h4">Tourists</h1>
-                    <h1 class="h1 text-secondary mt-2 sm:mt-4 sub-title-heading mx-5">Attractions</h1>
+                    <h1 class="h1 text-secondary mt-2  sub-title-heading ">Attractions</h1>
                     <div class="col-md-12 p-0 m-0 d-flex justify-content-end align-items-center " style=" position: relative;">
                         <img src="assets/svgs/tourist.svg" alt=""style="    bottom: -50px; position: absolute; left: 50%; top: auto; z-index: -1;">
                     </div>
@@ -299,7 +297,7 @@
             <div class="masonry mt-5 " >
                 <!--Fateh Sagar lake-->
                 <div class="card headline">
-                    <div class="col p-0 bg-image-ta-1 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-1 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -314,7 +312,7 @@
 
                 <!--Karani Mata Cable Car-->
                 <div class="card card-body p-0 headline">
-                    <div class="col p-0 bg-image-ta-4 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-4 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -328,7 +326,7 @@
                 </div>
                 <!--badi lake-->
                 <div class="card bg-image-ta-2 headline">
-                    <div class="col p-0 bg-image-ta-7 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-7 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -343,7 +341,7 @@
 
                 <!--Pichola lake-->
                 <div class="card card-body p-0 bg-primary text-white headline">
-                    <div class="col p-0 bg-image-ta-2 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-2 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -357,7 +355,7 @@
                 </div>
                 <!--Saheliyo Ki Badi-->
                 <div class="card card-body text-center card p-0 headline">
-                    <div class="col p-0 bg-image-ta-5 d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-5 d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -372,7 +370,7 @@
                 </div>
                 <!--City Palace-->
                 <div class="card card-body text-end p-0 headline">
-                    <div class="col p-0 bg-image-ta-8 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-8 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -386,7 +384,7 @@
                 </div>
                 <!--Savariya Seth Mandir-->
                 <div class="card card-body p-0 headline">
-                    <div class="col p-0 bg-image-ta-3 col d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-3 col d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -400,7 +398,7 @@
                 </div>
                 <!--Sajjangadh Palace-->
                 <div class="card card-body p-0 headline">
-                    <div class="col p-0 bg-image-ta-6 d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-6 d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -414,7 +412,7 @@
                 </div>
                 <!--Bagore Ki Haveli-->
                 <div class="card card-body p-0 headline">
-                    <div class="col p-0 bg-image-ta-9 d-flex flex-column justify-content-between shadow">
+                    <div class="col p-0 bg-image-ta-9 d-flex flex-column justify-content-between shadow tourist"  data-bs-toggle="modal" data-bs-target="#myModal">
                         <div class="d-flex flex-column justify-content-end align-items-end">
                             <div>
                                 <span class="badge rounded-pill bg-primary  text-light mx-2 my-2 p-1"> <i class="fa-solid fa-circle mx-1 blink-dot"></i> Trending spot</span>
@@ -438,7 +436,7 @@
                 </div>
                 <div>
                     <h1 class=" text-primary h4">Testimonial</h1>
-                    <h1 class=" text-secondary mt-2 mx-5 sm:mt-4 sub-title-heading h1">Happy Customers</h1>
+                    <h1 class=" text-secondary mt-2  sub-title-heading h1">Happy Customers</h1>
                    
                 </div>
                 <div></div>
@@ -722,7 +720,7 @@
             <div class="d-flex justify-content-center align-middle">
                 <div>
                     <h1 class="h4 text-primary">Contact us</h1>
-                    <h1 class="h1 sm:text-6xl text-secondary mt-2 mx-5 sm:mt-4 sub-title-heading">Get in touch</h1>
+                    <h1 class="h1  text-secondary mt-2 sub-title-heading">Get in touch</h1>
                 </div>
             </div>
             <div class="row mt-5">
@@ -775,6 +773,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Button trigger modal -->
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

@@ -1,0 +1,133 @@
+
+body{
+    font-family: 'Roboto Serif';
+    overflow-x: hidden;
+  }
+  .sub-title-heading{
+     font-family: 'Oleo Script' !important
+  }
+  #title{
+    font-family: 'Oleo Script' !important
+  }
+  .sub-title{
+    font-family: 'Oleo Script' !important
+  }
+  .btn-primary {
+      background-color: #F99C3B !important;
+      border-color: #F99C3B !important;
+  }
+  
+  .text-primary {
+      color: #F99C3B !important;
+  }
+  
+  .bg-primary {
+    background-color: #F99C3B !important;
+  }
+  .text-secondary {
+    color: #695C5C !important;
+  }
+  .text-bg {
+    color: #213555 !important;
+  }
+  .bg-secondary{
+    background-color: #695C5C !important;
+  }
+  .text-dark {
+    color: #695C5C !important;
+  }
+  .bg-warning{
+      background-color: #F99C3B !important;
+  }
+  
+  .bg-dark{
+    background-color: #213555 !important;
+  }
+  .bg-transparent{
+    background-color: #f99d3bee !important;
+  }
+  .masonry {
+    column-count: 3;
+    column-gap: 1rem;
+  }
+  .masonry .card {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+  @media (max-width: 768px) {
+      .masonry {
+          column-count: 2;
+      }
+  }
+  @media (max-width: 576px) {
+      .masonry {
+          column-count: 1;
+      }
+  }
+  .slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  .slider {
+      position: a;
+      transition: transform 0.5s ease-in-out;
+      gap: 10px; /* Adjust space between images */
+  }
+  .slider img {
+      width: 200px; /* Adjust width */
+      height: 150px; /* Adjust height */
+      object-fit: cover;
+      border-radius: 10px;
+      flex-shrink: 0;
+  }
+  .btn-slider {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+  }
+  .btn-prev { left: 10px; }
+  .btn-next { right: 10px; }
+  
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next {
+      bottom: 10px;
+      top: auto;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+  }
+  .carousel .carousel-control-prev {
+      left: 10px;
+  }
+  .carousel .carousel-control-next {
+      right: 10px;
+  }
+  .fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .fab {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .fab:hover {
+    transform: scale(1.1);
+  }

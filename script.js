@@ -1,64 +1,98 @@
+var touristPlaces = [
+    {
+        id: 1,
+        details:
+            "Experience the magic of Fateh Sagar Lake, where shimmering waters meet the majestic Aravalli mountains.  Explore enchanting islands, bask in the serene atmosphere, and create unforgettable memories in the heart of Udaipur.  Discover tranquility and breathtaking beauty at Fateh Sagar.1",
+        title: "Fateh Sagar Lake",
+        src:"/assets/rental/swift.png",
+        srcTourist:"assets/tourist_places/fateh_sagar.jpg"
+    },
+    {
+        id: 2,
+        details:
+            "Where history whispers on the breeze, and romance dances on the water, lies Lake Pichola.  Home to the iconic Lake Palace, it's a timeless masterpiece.  Glide across its shimmering surface, and let the magic of Udaipur unfold before your eyes.",
+        title: "Pichola Lake",
+        src:"/assets/rental/fortuner.png",
+        srcTourist:"assets/tourist_places/pichola_lake.jpg"
+    },
+    {
+        id: 3,
+        details:
+            "Nestled amidst the Aravalli hills, the Sanwariya Seth Mandir stands as a beacon of spirituality, attracting pilgrims from far and wide. Its serene ambiance and intricate architecture create a sense of peace and tranquility that envelops visitors upon entering",
+        title: "Savariya Seth Mandir",
+        src:"/assets/rental/innova.png",
+        srcTourist:"ssets/tourist_places/savariya1.jpg"
+       
+    },
+    {
+        id: 4,
+        details:
+            "Escape the bustling city and immerse yourself in the tranquility of nature as you glide through the serene hills. The ropeway offers a peaceful and relaxing journey, allowing you to connect with the natural beauty of Udaipur.",
+        title: "Karani Mata Mandir Cable Car",
+        src:"/assets/rental/fortuner.png",
+        srcTourist:"assets/tourist_places/cable_car.jpg"
+       
+    },
+    {
+        id: 5,
+        details:
+            "Escape the bustling city and immerse yourself in the tranquility of nature as you glide through the serene hills. The ropeway offers a peaceful and relaxing journey, allowing you to connect with the natural beauty of Udaipur.",
+        title: "Saheliyo Ki Bari",
+        src:"/assets/rental/swift.png",
+        srcTourist:"assets/tourist_places/saheliyo_badi.jpg"
+    },
+    {
+        id: 6,
+        details:
+            "Built in the 18th century, Sajjangarh Palace is a blend of Rajput and Mughal architectural styles. Its intricate carvings, delicate latticework, and imposing structure make it a masterpiece of architectural beauty.",
+        title: "Sajjangarh Palace",
+        src:"/assets/rental/fortuner.png",
+        srcTourist:"assets/tourist_places/Sajjangarhg_palace.jpg"
+    },
+    {
+        id: 7,
+        details: "The calm waters of Badi Lake mirror the vast sky above, creating a sense of tranquility and peace.  The reflections of the clouds and surrounding hills paint a breathtaking picture.",
+        title: "Badi Lake",
+        src:"/assets/rental/innova.png",
+        srcTourist:"assets/tourist_places/badi_lake.jpg"
+    },
+    {
+        id: 8,
+        details:
+            "Bagore Ki Haveli, once a grand residence of the Mewar prime ministers, now stands as a captivating museum. Its intricate architecture and rich history offer a fascinating glimpse into the lives of the aristocratic families of Udaipur",
+        title: "City Palace",
+        src:"/assets/rental/fortuner.png",
+        srcTourist:"assets/tourist_places/city_palace.jpg"
+    },
+    {
+        id: 9,
+        details:
+            "Bagore Ki Haveli, once a grand residence of the Mewar prime ministers, now stands as a captivating museum. Its intricate architecture and rich history offer a fascinating glimpse into the lives of the aristocratic families of Udaipur",
+        title: "Bagore Ki Haweli",
+        src:"/assets/rental/fortuner.png",
+        srcTourist:"assets/tourist_places/Bagore-ki-Haveli.jpg"
+    },
+];
 $(document).ready(function () {
+
+    $(".tourist").click(function() {
+        let classList = $(this).attr("class");
+        classList.split(" ").forEach((item)=>{
+               
+                
+               if(item.startsWith("bg-image-ta-")){
+                 let splittedClass =  item.split("-")
+                 console.log( touristPlaces[splittedClass.at(-1)-1]['srcTourist']);
+                $("#modal-footer-title").html(touristPlaces[splittedClass.at(-1)-1]['title']);
+                $("#modal-footer-desc").html(touristPlaces[splittedClass.at(-1)-1]['details']);
+                $("#modal-image").attr("src", touristPlaces[splittedClass.at(-1)-1]['srcTourist']);
+               
+            }
+        })
+       
+    });
     ScrollReveal().reveal('.headline',{ delay: 500 });
-     var touristPlaces = [
-        {
-            id: 1,
-            details:
-                "Experience the magic of Fateh Sagar Lake, where shimmering waters meet the majestic Aravalli mountains.  Explore enchanting islands, bask in the serene atmosphere, and create unforgettable memories in the heart of Udaipur.  Discover tranquility and breathtaking beauty at Fateh Sagar.1",
-            title: "Fateh Sagar Lake",
-            src:"/assets/rental/swift.png"
-        },
-        {
-            id: 2,
-            details:
-                "Where history whispers on the breeze, and romance dances on the water, lies Lake Pichola.  Home to the iconic Lake Palace, it's a timeless masterpiece.  Glide across its shimmering surface, and let the magic of Udaipur unfold before your eyes.",
-            title: "Pichola Lake",
-            src:"/assets/rental/fortuner.png"
-        },
-        {
-            id: 3,
-            details:
-                "Nestled amidst the Aravalli hills, the Sanwariya Seth Mandir stands as a beacon of spirituality, attracting pilgrims from far and wide. Its serene ambiance and intricate architecture create a sense of peace and tranquility that envelops visitors upon entering",
-            title: "Savariya Seth Mandir",
-            src:"/assets/rental/innova.png"
-           
-        },
-        {
-            id: 4,
-            details:
-                "Escape the bustling city and immerse yourself in the tranquility of nature as you glide through the serene hills. The ropeway offers a peaceful and relaxing journey, allowing you to connect with the natural beauty of Udaipur.",
-            title: "Karani Mata Mandir Cable Car",
-             src:"/assets/rental/fortuner.png"
-           
-        },
-        {
-            id: 5,
-            details:
-                "Escape the bustling city and immerse yourself in the tranquility of nature as you glide through the serene hills. The ropeway offers a peaceful and relaxing journey, allowing you to connect with the natural beauty of Udaipur.",
-            title: "Saheliyo Ki Bari",
-              src:"/assets/rental/swift.png"
-        },
-        {
-            id: 6,
-            details:
-                "Built in the 18th century, Sajjangarh Palace is a blend of Rajput and Mughal architectural styles. Its intricate carvings, delicate latticework, and imposing structure make it a masterpiece of architectural beauty.",
-            title: "Sajjangarh Palace",
-             src:"/assets/rental/fortuner.png"
-        },
-        {
-            id: 7,
-            details: "The calm waters of Badi Lake mirror the vast sky above, creating a sense of tranquility and peace.  The reflections of the clouds and surrounding hills paint a breathtaking picture.",
-            title: "Badi Lake",
-             src:"/assets/rental/innova.png"
-        },
-        {
-            id: 8,
-            details:
-                "Bagore Ki Haveli, once a grand residence of the Mewar prime ministers, now stands as a captivating museum. Its intricate architecture and rich history offer a fascinating glimpse into the lives of the aristocratic families of Udaipur",
-            title: "Bagore Ki Haweli",
-            src:"/assets/rental/fortuner.png"
-        },
-    ];
+   
     console.log(touristPlaces[0]["details"]);
 
     $("#title").html(touristPlaces[0]["title"]);
